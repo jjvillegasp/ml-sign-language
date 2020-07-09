@@ -48,6 +48,8 @@ const mobile = isMobile();
 // to avoid crowding limited screen space.
 const renderPointcloud = mobile === false;
 
+let shouldPrintResults = false;
+
 const state = {
   backend: 'webgl'
 };
@@ -55,6 +57,24 @@ const state = {
 if (renderPointcloud) {
   state.renderPointcloud = true;
 }
+
+(() => {
+
+  const togglePrintResults = (ev) => {
+    console.log(ev);
+    
+    shouldPrintResults = !shouldPrintResults;
+  
+    if (shouldPrintResults) {
+      ev.target.innerText = "Stop";
+    } else {
+      ev.target.innerText = "Play";
+    }
+  }
+  
+  document.getElementById('record-button').addEventListener('click', togglePrintResults);
+
+})();
 
 function setupDatGui() {
   const gui = new dat.GUI();
@@ -212,7 +232,7 @@ const landmarksRealTime = async (video) => {
       const prediction = predictions[0];
       const result = prediction.landmarks;
       console.log(`Hand in view confidence: ${prediction.handInViewConfidence}`);
-      if (prediction.handInViewConfidence == 1) {
+      if (prediction.handInViewConfidence == 1 && shouldPrintResults) {
         printResults(prediction);
       }
       
