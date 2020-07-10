@@ -1,0 +1,65 @@
+﻿Columna,Descripción
+x0,Coordenada X LM 0 Correspondiente a la muñeca
+y0,Coordenada Y LM 0 Correspondiente a la muñeca
+z0,Coordenada Z LM 0 Correspondiente a la muñeca
+x1,Coordenada X LM 1 Correspondiente al dedo pulgar
+y1,Coordenada Y LM 1 Correspondiente al dedo pulgar
+z1,Coordenada Z LM 1 Correspondiente al dedo pulgar
+x2,Coordenada X LM 2 Correspondiente a la primera falange del dedo pulgar
+y2,Coordenada Y LM 2 Correspondiente a la primera falange del dedo pulgar
+z2,Coordenada Z LM 2 Correspondiente a la primera falange del dedo pulgar
+x3,Coordenada X LM 3 Correspondiente a la segunda falange del dedo pulgar
+y3,Coordenada Y LM 3 Correspondiente a la segunda falange del dedo pulgar
+z3,Coordenada Z LM 3 Correspondiente a la segunda falange del dedo pulgar
+x4,Coordenada X LM 4 Correspondiente a la punta del dedo pulgar
+y4,Coordenada Y LM 4 Correspondiente a la punta del dedo pulgar
+z4,Coordenada Z LM 4 Correspondiente a la punta del dedo pulgar
+x5,Coordenada X LM 5 Correspondiente a la primera falange del dedo índice
+y5,Coordenada Y LM 5 Correspondiente a la primera falange del dedo índice
+z5,Coordenada Z LM 5 Correspondiente a la primera falange del dedo índice
+x6,Coordenada X LM 6 Correspondiente a la segunda falange del dedo índice
+y6,Coordenada Y LM 6 Correspondiente a la segunda falange del dedo índice
+z6,Coordenada Z LM 6 Correspondiente a la segunda falange del dedo índice
+x7,Coordenada X LM 7 Correspondiente a la tercera falange del dedo índice
+y7,Coordenada Y LM 7 Correspondiente a la tercera falange del dedo índice
+z7,Coordenada Z LM 7 Correspondiente a la tercera falange del dedo índice
+x8,Coordenada X LM 8 Correspondiente a la punta del dedo índice
+y8,Coordenada Y LM 8 Correspondiente a la punta del dedo índice
+z8,Coordenada Z LM 8 Correspondiente a la punta del dedo índice
+x9,Coordenada X LM 9 Correspondiente a la primera falange del dedo medio
+y9,Coordenada Y LM 9 Correspondiente a la primera falange del dedo medio
+z9,Coordenada Z LM 9 Correspondiente a la primera falange del dedo medio
+x10,Coordenada X LM 10 Correspondiente a la segunda falange del dedo medio
+y10,Coordenada Y LM 10 Correspondiente a la segunda falange del dedo medio
+z10,Coordenada Z LM 10 Correspondiente a la segunda falange del dedo medio
+x11,Coordenada X LM 11 Correspondiente a la tercera falange del dedo medio
+y11,Coordenada Y LM 11 Correspondiente a la tercera falange del dedo medio
+z11,Coordenada Z LM 11 Correspondiente a la tercera falange del dedo medio
+x12,Coordenada X LM 12 Correspondiente a la punta del dedo medio
+y12,Coordenada Y LM 12 Correspondiente a la punta del dedo medio
+z12,Coordenada Z LM 12 Correspondiente a la punta del dedo medio
+x13,Coordenada X LM 13 Correspondiente a la primera falange del dedo anular
+y13,Coordenada Y LM 13 Correspondiente a la primera falange del dedo anular
+z13,Coordenada Z LM 13 Correspondiente a la primera falange del dedo anular
+x14,Coordenada X LM 14 Correspondiente a la segunda falange del dedo anular
+y14,Coordenada Y LM 14 Correspondiente a la segunda falange del dedo anular
+z14,Coordenada Z LM 14 Correspondiente a la segunda falange del dedo anular
+x15,Coordenada X LM 15 Correspondiente a la tercera falange del dedo anular
+y15,Coordenada Y LM 15 Correspondiente a la tercera falange del dedo anular
+z15,Coordenada Z LM 15 Correspondiente a la tercera falange del dedo anular
+x16,Coordenada X LM 16 Correspondiente a la punta del dedo anular
+y16,Coordenada Y LM 16 Correspondiente a la punta del dedo anular
+z16,Coordenada Z LM 16 Correspondiente a la punta del dedo anular
+x17,Coordenada X LM 17 Correspondiente a la primera falange del dedo meñique
+y17,Coordenada Y LM 17 Correspondiente a la primera falange del dedo meñique
+z17,Coordenada Z LM 17 Correspondiente a la primera falange del dedo meñique
+x18,Coordenada X LM 18 Correspondiente a la segunda falange del dedo meñique
+y18,Coordenada Y LM 18 Correspondiente a la segunda falange del dedo meñique
+z18,Coordenada Z LM 18 Correspondiente a la segunda falange del dedo meñique
+x19,Coordenada X LM 19 Correspondiente a la tercera falange del dedo meñique
+y19,Coordenada Y LM 19 Correspondiente a la tercera falange del dedo meñique
+z19,Coordenada Z LM 19 Correspondiente a la tercera falange del dedo meñique
+x20,Coordenada X LM 20 Correspondiente a la punta del dedo meñique
+y20,Coordenada Y LM 20 Correspondiente a la punta del dedo meñique
+z20,Coordenada Z LM 20 Correspondiente a la punta del dedo meñique
+Clase,Números del 0 al 11

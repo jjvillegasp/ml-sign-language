@@ -236,7 +236,7 @@ const landmarksRealTime = async (video) => {
       const prediction = predictions[0];
       const result = prediction.landmarks;
       console.log(`Hand in view confidence: ${prediction.handInViewConfidence}`);
-      if (prediction.handInViewConfidence > 0.98 && shouldPrintResults) {
+      if (prediction.handInViewConfidence >= 0.99 && shouldPrintResults) {
         printResults(prediction);
       }
       
