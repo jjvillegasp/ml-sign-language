@@ -63,12 +63,16 @@ if (renderPointcloud) {
   const togglePrintResults = (ev) => {
     console.log(ev);
     
-    shouldPrintResults = !shouldPrintResults;
+    shouldPrintResults = true;
   
     if (shouldPrintResults) {
       ev.target.innerText = "Stop";
+      setTimeout(() => {
+        shouldPrintResults = false;
+        ev.target.innerText = "Record";
+      }, 5000);
     } else {
-      ev.target.innerText = "Play";
+      ev.target.innerText = "Record";
     }
   }
   
@@ -232,7 +236,7 @@ const landmarksRealTime = async (video) => {
       const prediction = predictions[0];
       const result = prediction.landmarks;
       console.log(`Hand in view confidence: ${prediction.handInViewConfidence}`);
-      if (prediction.handInViewConfidence == 1 && shouldPrintResults) {
+      if (prediction.handInViewConfidence > 0.98 && shouldPrintResults) {
         printResults(prediction);
       }
       
