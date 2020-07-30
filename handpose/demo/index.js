@@ -20,6 +20,8 @@ import * as handpose from '@tensorflow-models/handpose';
 import * as tfjsWasm from '@tensorflow/tfjs-backend-wasm';
 import * as tf from '@tensorflow/tfjs';
 import {version_wasm} from '@tensorflow/tfjs-backend-wasm';
+// import { RandomForestClassifier } from './rf-estimator-2.min.js';
+import { clfSVC } from './SVC.js';
 
 tfjsWasm.setWasmPath(
     `https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-backend-wasm@${
@@ -192,6 +194,10 @@ const printResults = (prediction) => {
   document.getElementById("results").value = lastResults  + '\n' + newResults;
 }
 
+const minMaxScale = (val, min, max) => {
+  return (val - min) / (max - min);
+}
+
 const landmarksRealTime = async (video) => {
   setupDatGui();
 
@@ -239,6 +245,13 @@ const landmarksRealTime = async (video) => {
       if (prediction.handInViewConfidence >= 0.99 && shouldPrintResults) {
         printResults(prediction);
       }
+      
+      const features = prediction.landmarks.flat().map( landmark => minMaxScale(landmark, 0, 1) );
+      console.log(features);
+      // const classification = new RandomForestClassifier().predict(features);
+      
+      var classification = clfSVC.predict(features);
+      console.log(`Predicted class ${classification}`);
       
       drawKeypoints(ctx, result, prediction.annotations);
 
