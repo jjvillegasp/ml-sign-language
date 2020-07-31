@@ -21,7 +21,8 @@ import * as tfjsWasm from '@tensorflow/tfjs-backend-wasm';
 import * as tf from '@tensorflow/tfjs';
 import {version_wasm} from '@tensorflow/tfjs-backend-wasm';
 // import { RandomForestClassifier } from './rf-estimator-2.min.js';
-import { clfSVC } from './SVC.js';
+import { RandomForestClassifier } from './rf-estimator-no-transform.min.js';
+// import { clfSVC } from './SVC.js';
 
 tfjsWasm.setWasmPath(
     `https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-backend-wasm@${
@@ -246,11 +247,12 @@ const landmarksRealTime = async (video) => {
         printResults(prediction);
       }
       
-      const features = prediction.landmarks.flat().map( landmark => minMaxScale(landmark, 0, 1) );
-      console.log(features);
-      // const classification = new RandomForestClassifier().predict(features);
+      // const features = prediction.landmarks.flat().map( landmark => minMaxScale(landmark, 0, 1) );
+      const features = prediction.landmarks.flat();
+      // console.log(features);
+      const classification = new RandomForestClassifier().predict(features);
       
-      var classification = clfSVC.predict(features);
+      // var classification = clfSVC.predict(features);
       console.log(`Predicted class ${classification}`);
       
       drawKeypoints(ctx, result, prediction.annotations);
