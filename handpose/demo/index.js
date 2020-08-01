@@ -252,8 +252,10 @@ const landmarksRealTime = async (video) => {
       // console.log(features);
       const classification = new RandomForestClassifier().predict(features);
       
+      document.getElementById("prediction").textContent = classification;
+
       // var classification = clfSVC.predict(features);
-      console.log(`Predicted class ${classification}`);
+      //console.log(`Predicted class ${classification}`);
       
       drawKeypoints(ctx, result, prediction.annotations);
 
